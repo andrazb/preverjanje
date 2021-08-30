@@ -1,0 +1,2 @@
+# preverjanje
+Preverjanje usposobljenosti
