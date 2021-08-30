@@ -1,0 +1,5 @@
+
+  Vpiši ime: <input type="text" [(ngModel)]="name" />
+  <button type="button" (click)="onButtonClick()">Potrdi</button>
+  <div *ngIf="showResult">Rezultat: {{ responseText | async | json }}</div>
+
