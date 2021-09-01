@@ -20,12 +20,9 @@ const routes = require('./routes.js');
 
 //register the route
 routes(app);
-/*
+
 var server = https.createServer(options, app);
 
 server.listen(port, ()=> {
     console.log(`Hello rest servis na portu: ${port}`);
 });
-*/
-//http.createServer(app).listen(3000)
-https.createServer(options, app).listen(3000);
