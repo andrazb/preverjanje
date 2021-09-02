@@ -1,10 +1,10 @@
 # Preverjanje usposobljenosti
 Rešitev je v podmapah **angular-app**, **hello_java** in **hello_node**. 
-Pri obeh REST servisih je uporabljen samopodpisni certifikat in je pri testu potrebno v brskalniku omogočiti izjemo oz. curl zagnati s parametrom -k (npr. `curl -k https://localhost/hello`).
+Pri obeh REST servisih je uporabljen samopodpisani certifikat in je pri testu potrebno v brskalniku omogočiti izjemo oz. curl zagnati s parametrom -k (npr. `curl -k https://localhost/hello`).
 
 ## hello_java
  - REST servis napisan v Javi z uporabo Spring Boot frameworka
- - uporavbljena verzija Java 11
+ - uporabljena verzija Java 11
  - omogočen je https
  - zapakirana Angular aplikacija je v podmapi static
  - zagon z ukazom `mvn spring-boot:run`
@@ -17,4 +17,4 @@ Pri obeh REST servisih je uporabljen samopodpisni certifikat in je pri testu pot
 ## angular-app
 - preprosta web aplikacija narejena z uporabo Angular 12
 - zagon z `ng serve`
-- z `ng build` je bil narejen paket, ki se je za statično spletno stran iz mape *dist/angular-app* prenesel v oba projekta za REST servisa
+- z `ng build` je bil narejen paket, ki predstavlja statično spletno stran in se je iz mape *dist/angular-app* prenesel v oba projekta za REST servisa
