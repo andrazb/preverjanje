@@ -1,5 +1,17 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <form class="mt-4">
+        <div class="form-group">
+          <label for="nameInput">Vpišite ime</label>
+          <input type="text" class="form-control" id="nameInput" [(ngModel)]="name" name="name">
+        </div>
+        <button type="submit" (click)="onButtonClick()" class="btn btn-primary my-4">Potrdi</button>
+      </form>
+    
+      <div *ngIf="showResult">Odziv: {{ responseText }}</div>
+    </div>
+  </div>
 
-  Vpiši ime: <input type="text" [(ngModel)]="name" />
-  <button type="button" (click)="onButtonClick()">Potrdi</button>
-  <div *ngIf="showResult">Rezultat: {{ responseText | async | json }}</div>
 
+</div>
