@@ -2,7 +2,7 @@ const express = require('express');
 const https = require('https');
 const fs = require('fs');
 const app = express();
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 443;
 
 var key = fs.readFileSync('./cert/localhost-key.pem');
 var cert = fs.readFileSync('./cert/localhost.pem');
@@ -21,8 +21,8 @@ const routes = require('./routes.js');
 //register the route
 routes(app);
 
-//var server = https.createServer(options, app);
+var server = https.createServer(options, app);
 
-app.listen(port, ()=> {
+server.listen(port, ()=> {
     console.log(`Hello rest servis na portu: ${port}`);
 });
