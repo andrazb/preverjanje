@@ -18,5 +18,6 @@ Pri obeh REST servisih je uporabljen samopodpisani certifikat in je pri testu po
 
 ## angular-app
 - web aplikacija narejena z uporabo Angular 12
+- instalacija potrebnih paketov z `npm install`
 - zagon z `ng serve`
 - z `ng build` je bil narejen paket, ki predstavlja statično spletno stran in se je iz mape *dist/angular-app* prenesel v oba projekta za REST servisa
